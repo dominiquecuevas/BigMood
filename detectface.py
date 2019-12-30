@@ -56,4 +56,8 @@ def face(image_url):
             }
 
 
+<<<<<<< HEAD
 # print(face())
+=======
+# print(face())
+>>>>>>> 831de980b44d534013a6f39f8c4fcbeab2ecffef

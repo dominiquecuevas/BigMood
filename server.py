@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, flash, redirect, session, jsonify
 from jinja2 import StrictUndefined
-from face import face
+from detectface import face
 
 app = Flask(__name__)
 app.secret_key = 'yliwmhd'
