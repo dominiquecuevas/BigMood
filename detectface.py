@@ -54,10 +54,3 @@ def face(image_url):
                         'sadness': total_emotions['sadness'],
                         'surprise': total_emotions['surprise']
             }
-
-
-<<<<<<< HEAD
-# print(face())
-=======
-# print(face())
->>>>>>> 831de980b44d534013a6f39f8c4fcbeab2ecffef
