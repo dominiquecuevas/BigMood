@@ -6,6 +6,7 @@ A mini app that returns the data visualization of emotions from an image url usi
 ## Getting Started
 ### Installation
 * Clone repository
+
     `$ git clone https://github.com/dominiquecuevas/BigMood`
 
 * Create a Virtual Environment
