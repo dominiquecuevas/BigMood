@@ -27,7 +27,3 @@ body {
     align-self: auto;
     height: 100%;
 }
-
-img[alt="gif"] {
-    max-width: 250px;
-}
