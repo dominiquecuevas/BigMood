@@ -11,14 +11,14 @@ var myChart = new Chart(ctx, {
                 'sadness', 
                 'surprise'],
         datasets: [{
-            data: [.1, 
-                    .2, 
-                    .3, 
-                    .1, 
-                    .1, 
-                    .2, 
-                    .2, 
-                    .1],
+            data: [0, 
+                    0, 
+                    0, 
+                    0, 
+                    0, 
+                    0, 
+                    0, 
+                    0, 1],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(255, 159, 64, .2)',
@@ -48,13 +48,14 @@ var myChart = new Chart(ctx, {
 
 $('#face').on('submit', (evt) => {
     evt.preventDefault();
-    const image_url = $('input[name="image_url"]').val();
-    // const image_url = "https://us-east-1.tchyn.io/snopes-production/uploads/2016/12/sad-keanu.jpg"
+    let image_url = $('input[name="image_url"]').val();
+    
+    $('#chart').css("background-image", `url(${image_url})`);
+
     $.get(`/face.json?image_url=${image_url}`, (res) => {
         myChart.data.datasets.forEach((dataset) => {
         dataset.data.pop();
         });
-        // myChart.update();
         myChart.data.datasets[0].data = [
             res.anger, 
             res.contempt, 
