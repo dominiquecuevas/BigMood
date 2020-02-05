@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>BigMood</title>
+    <link rel="icon" href="/static/favicon.png">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
-
+    
     <script
               src="https://code.jquery.com/jquery-3.4.1.js"
               integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
               crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
 </head>
 <body>
+    <br>
+    Image URL: 
     <form action="/face.json" id="face">
         <input type="text" name="image_url">
         <input type="submit">
     </form>
+    <br>
 
-<canvas id="myChart" width="400" height="400"></canvas>
-<script type="text/javascript" src="/static/chart.js">
-</script>
+    Mood Ring:
+    <div id="chart">
+        <canvas id="myChart" width="400" height="400"></canvas>
+    </div>
+
+    <script type="text/javascript" src="/static/chart.js">
+    </script>
 
 </body>
 </html>
