@@ -1,7 +1,7 @@
 # BigMood
 A mini app that returns the data visualization of emotions from an image url using the Microsoft Azure Face API.
 
-![](https://j.gifs.com/nxVrKY.gif)
+![gif](https://j.gifs.com/nxVrKY.gif)
 
 ## Getting Started
 ### Installation
